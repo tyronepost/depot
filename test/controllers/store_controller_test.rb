@@ -9,4 +9,13 @@ class StoreControllerTest < ActionDispatch::IntegrationTest
     assert_select 'h3', 'Programming Ruby 1.9'
     assert_select '.price', /\$[,\d]+\.\d\d/
   end
+
+  test 'counter should increment' do
+    get store_index_url
+    assert_response :success
+    assert_select '#counter', 'Page Counter: 1'
+    get store_index_url
+    assert_response :success
+    assert_select '#counter', 'Page Counter: 2'
+  end
 end
