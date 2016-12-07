@@ -1,7 +1,7 @@
 class StoreController < ApplicationController
   def index
     if session[:counter].nil?
-      session[:counter] = 1
+      session[:counter] = 0
     else
       session[:counter] += 1
     end
