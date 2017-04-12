@@ -3,7 +3,7 @@
 one:
   name: Tyrone Post 
   address: MyText
-  email: tyrone@exmaple.org
+  email: dave@example.org
   pay_type: Check
 
 two:
