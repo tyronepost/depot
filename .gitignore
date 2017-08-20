@@ -22,3 +22,5 @@
 
 # ignore all ide folders
 /.idea
+
+coverage/
