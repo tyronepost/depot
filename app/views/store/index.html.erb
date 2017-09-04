@@ -15,5 +15,10 @@
       </div>
     <% end %>
   <% end %>
+  <% if session[:counter] > 0 %>
+    <div class="entry">
+      This page has been rendered <%= pluralize(session[:counter], 'time') %>
+    </div>
+  <% end %>
 <% end %>
 
