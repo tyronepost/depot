@@ -15,9 +15,12 @@
 </div>
 <div id="columns">
   <div id="side">
+    <div id="cart">
+      <%= render(@cart) if @cart %>
+    </div>
     <ul>
       <li><a href="http://www...."><%= @date if @date %></a></li>
-      <li><a href="http://www....">Home</a></li>
+      <%= link_to 'Home', store_index_path %>
       <li><a href="http://www....">Questions</a></li>
       <li><a href="http://www....">News</a></li>
       <li><a href="http://www....">Contact</a></li>

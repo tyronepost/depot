@@ -59,6 +59,10 @@ body, body > p, body > ol, body > ul, body > td {margin:8px !important}
     padding: 1em 2em;
     background: #141;
 
+    form, div {
+      display: inline;
+    }
+
     input {
       font-size: small;
     }
@@ -117,7 +121,7 @@ body, body > p, body > ol, body > ul, body > td {margin:8px !important}
       color: #dfd;
       background: #141;
       font-family: sans-serif;
-      padding: 0.23m 1em;
+      padding: 0.2em 1em;
     }
 
     div {
